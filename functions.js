@@ -64,6 +64,3 @@ fb.auth.signOut()
 // 	Update : details, password, email
 
 // 	Forgot Password
-
-
-

@@ -1,7 +1,6 @@
 const express = require('express')
 const cors = require('cors');
 const bodyParser = require('body-parser')
-// const client = require('twilio')('ACda737055fd889684f26ca50f0a91703b', '8ecdb3e3b53c7a692e9d21a04e4b7179',);
 const app = express();
 
 
@@ -21,12 +20,11 @@ app.options("*", cors())
 
 
 const admin = require('firebase-admin');
-// const firebase = require('firebase/compat/app');
 
 
 const { private_key } = JSON.parse(process.env.private_key)
 
-var serviceAccount = {
+const serviceAccount = {
     "type": process.env.type,
     "project_id": process.env.project_id,
     "private_key_id": process.env.private_key_id,
